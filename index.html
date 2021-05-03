@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/common/Ellipse 32.png">
+
+    <title>Siphome</title>
+</head>
+
+<body>
+
+    <!--
+██╗░░██╗███████╗░█████╗░██████╗░███████╗██████╗░
+██║░░██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗
+███████║█████╗░░███████║██║░░██║█████╗░░██████╔╝
+██╔══██║██╔══╝░░██╔══██║██║░░██║██╔══╝░░██╔══██╗
+██║░░██║███████╗██║░░██║██████╔╝███████╗██║░░██║
+╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝╚═════╝░╚══════╝╚═╝░░╚═╝-->
+
+
+    <div class="site-container">
+        <header class="header">
+            <div class="container">
+                <img class="logo" src="img/header-section/logo.svg" alt="logo"> <!--header__logo-->
+                <nav class="navigation"><!--header__nav-->
+                    <ul class="list"><!--nav__list-->
+                        <li class="item"><!--list__item--><a href="#" class="link link--active">Home</a><!--item__link--></li>
+                        <li class="item"><a href="#" class="link">Features</a></li>
+                        <li class="item"><a href="#" class="link">Services</a></li>
+                        <li class="item"><a href="#" class="link">Contact</a></li>
+                        <li class="item"><a href="#" class="link">FAQ</a></li>
+                    </ul>
+                </nav>
+    
+                <ul class="header__cta">
+                    <li class="cta__item cta__item--black"><a href="#" class="cta__link cta__link-dash">Sign In</a></li>
+                    <li class="cta__item cta__item--green"><a href="#" class="cta__link cta__link--green">Get Started </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    
+        <!--
+    ███╗░░░███╗░█████╗░██╗███╗░░██╗
+    ████╗░████║██╔══██╗██║████╗░██║
+    ██╔████╔██║███████║██║██╔██╗██║
+    ██║╚██╔╝██║██╔══██║██║██║╚████║
+    ██║░╚═╝░██║██║░░██║██║██║░╚███║
+    ╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝╚═╝░░╚══╝-->
+    
+    
+        <main class="main">
+    
+            <!--
+    ░██████╗░░░░░░██╗░░██╗░█████╗░███╗░░░███╗███████╗
+    ██╔════╝░░░░░░██║░░██║██╔══██╗████╗░████║██╔════╝
+    ╚█████╗░█████╗███████║██║░░██║██╔████╔██║█████╗░░
+    ░╚═══██╗╚════╝██╔══██║██║░░██║██║╚██╔╝██║██╔══╝░░
+    ██████╔╝░░░░░░██║░░██║╚█████╔╝██║░╚═╝░██║███████╗
+    ╚═════╝░░░░░░░╚═╝░░╚═╝░╚════╝░╚═╝░░░░░╚═╝╚══════╝-->
+    
+    
+            <section class="home">
+                <div class="container">
+                    <h1 class="home__heading">
+                        Imagine your<br> home smart enough <span class="span--green"> to take care</span> of itself.
+                    </h1>
+                    <p class="home__text">
+                        Turn your home into a smarthome today with a simple &
+                        affordable upgrade. Discover the upgrade that automates
+                        home maintenance.
+                    </p>
+                    <div class="home__cta">
+                        <button class="button home__btn home__btn--green">Get Started</button>
+                        <button class="button home__btn home__btn--white ml-small">Learn More</button>
+                    </div>
+                    <img src="img/header-section/large-image.png" alt="Home image 1" class="home__img home__img-large">
+                    <img src="img/header-section/small-image.png" alt="Home image 1" class="home__img home__img-small">
+                    <img src="img/header-section/dot.png" alt="dots" class="home__img home__img-dots">
+                </div>
+            </section>
+    
+            <!--
+    ░██████╗░░░░░░███████╗███████╗░█████╗░████████╗██╗░░░██╗██████╗░███████╗░██████╗
+    ██╔════╝░░░░░░██╔════╝██╔════╝██╔══██╗╚══██╔══╝██║░░░██║██╔══██╗██╔════╝██╔════╝
+    ╚█████╗░█████╗█████╗░░█████╗░░███████║░░░██║░░░██║░░░██║██████╔╝█████╗░░╚█████╗░
+    ░╚═══██╗╚════╝██╔══╝░░██╔══╝░░██╔══██║░░░██║░░░██║░░░██║██╔══██╗██╔══╝░░░╚═══██╗
+    ██████╔╝░░░░░░██║░░░░░███████╗██║░░██║░░░██║░░░╚██████╔╝██║░░██║███████╗██████╔╝
+    ╚═════╝░░░░░░░╚═╝░░░░░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░░╚═════╝░╚═╝░░╚═╝╚══════╝╚═════╝░-->
+    
+    
+            <section class="features">
+                <div class="container">
+                    <img src="img/features-section/dot.png" alt="dots" class="features__img-dots">
+                    <p class="features__text-entry">
+                        Every day your home faces countless potential threats. Every day you face countless potential
+                        headaches. A small problem can become a major disaster. Early warning signs exist but often you
+                        can't hear or see them.
+                    </p>
+                    <div class="features__main">
+                        <div class="features__main-img"><!--main__img-->
+                            <img src="img/features-section/illustation.png" alt="illustration" class="features__main__ill"><!--img__illustration-->
+                        </div>
+                        <div class="features__main-info"><!--main__info-->
+                            <h3 class="heading-3">FEATURES</h3>
+                            <h2 class="heading-2">Meet Siphome</h2>
+                            <p class="features__main-info__text"><!--info__text-->
+                                The most comprehensive smart solution to home maintenance. All it takes is a simple and
+                                affordable sensor installation by one of our Siphome certified technicians.
+                            </p>
+                            <div class="grid-container"><!--info__grid-container-->
+                                <div class="grid-items"><!--grid-container__items-->
+                                    <img src="img/features-section/icon-f1.svg" alt="Icon"
+                                        class="features__icon features__icon--1">
+                                    <h4 class="heading-f4">Automatic Threat Detection</h4>
+                                    <p class="grid-container__text">Siphome reacts the moment your equipment fails, alerting
+                                        you to the problem.</p>
+                                </div>
+    
+                                <div class="grid-items">
+                                    <img src="img/features-section/icon-f2.svg" alt="Icon"
+                                        class="features__icon features__icon--1">
+                                    <h4 class="heading-f4">Smart Diagnostics</h4>
+                                    <p class="grid-container__text">See exactly what is malfunctioning and compare your
+                                        maintenance options on the same screen.</p>
+                                </div>
+    
+                                <div class="grid-items">
+                                    <img src="img/features-section/icon-f3.svg" alt="Icon"
+                                        class="features__icon features__icon--1">
+                                    <h4 class="heading-f4">Disaster Prevention</h4>
+                                    <p class="grid-container__text">Predictive analytics lets you see what needs maintenance
+                                        before it fails.</p>
+                                </div>
+    
+                                <div class="grid-items">
+                                    <img src="img/features-section/icon-f4.svg" alt="Icon"
+                                        class="features__icon features__icon--1">
+                                    <h4 class="heading-f4">24/7 Service​</h4>
+                                    <p class="grid-container__text">Siphome monitors your critical systems 24/7 so you can
+                                        enjoy peace of mind.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!--
+    ░██████╗░░░░░░██╗░░░██╗██████╗░██████╗░░█████╗░████████╗███████╗
+    ██╔════╝░░░░░░██║░░░██║██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██╔════╝
+    ╚█████╗░█████╗██║░░░██║██████╔╝██║░░██║███████║░░░██║░░░█████╗░░
+    ░╚═══██╗╚════╝██║░░░██║██╔═══╝░██║░░██║██╔══██║░░░██║░░░██╔══╝░░
+    ██████╔╝░░░░░░╚██████╔╝██║░░░░░██████╔╝██║░░██║░░░██║░░░███████╗
+    ╚═════╝░░░░░░░░╚═════╝░╚═╝░░░░░╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚══════╝-->
+    
+    
+            <section class="update">
+                <div class="container">
+                    <div class="update__art">
+                        <h3 class="heading-3">UPDATE</h3>
+                        <h2 class="heading-2 update__heading-2">It starts with an upgrade</h2><!--art__heading-2-->
+                        <img src="img/update-section/photo-1.png" alt="Photo 1" class="update__img update__img-1"><!--art__img--><!--img--1-->
+                        <img src="img/update-section/photo-2.png" alt="Photo 2" class="update__img update__img-2">
+                        <img src="img/update-section/photo-3.png" alt="Photo 3" class="update__img update__img-3">
+                    </div>
+                    <div class="update__info">
+                        
+                        <img src="img/update-section/icon-1.svg" alt="Icon" class="update__info__icon"><!--info__icon-->
+                        <div class="update__info__grid-item"><!--info__grid-item-->
+                            <h4 class="update__heading-4">Monitor</h4><!--grid-item__heading-4-->
+                            <p class="update__info__grid-item__text"><!--grid-item__text-->
+                                Make your standard systems smart with Siphome. A simple installation or integration and we
+                                can start to monitor 24/7 to make sure your home is Siphome.
+                            </p>
+                        </div>
+    
+                        <img src="img/update-section/icon-2.svg" alt="Icon" class="update__info__icon">
+                        <div class="update__info__grid-item">
+                            <h4 class="update__heading-4">Maintenance</h4>
+                            <p class="update__info__grid-item__text">
+                                Siphome helps you maintain your home. The HomeHealth Record ensures you have the right
+                                information at the right time, and if you aren’t able to do the maintenance yourself, we can
+                                connect you to a service pro to help.
+                            </p>
+                        </div>
+    
+                        <img src="img/update-section/icon-3.svg" alt="Icon" class="update__info__icon">
+                        <div class="update__info__grid-item">
+                                <h4 class="update__heading-4">Repair</h4>
+                                <p class="update__info__grid-item__text">
+                                    Siphome empowers you with smart notifications so you can make repairs before they become
+                                    problems. Notifications provide diagnostics and recommended next actions so you know what to
+                                    do and have the same information as your service pro.
+                                </p>
+                        </div>
+    
+                        <img src="img/update-section/icon-4.svg" alt="Icon" class="update__info__icon">
+                        <div class="update__info__grid-item">
+                            <h4 class="update__heading-4">Replace</h4>
+                            <p class="update__info__grid-item__text">
+                                Improve your home over time. Build your next-gen smart home with Siphome’s advice along the
+                                way.
+                            </p>
+                        </div>
+                        <img src="img/update-section/dot.png" alt="dots" class="update__dots-1"><!--info__dots-1-->
+                        <img src="img/update-section/dot-bottom-1.png" alt="dots" class="update__dots-2">
+                        <img src="img/update-section/dot-bottom-2.png" alt="dots" class="update__dots-3">
+                        <img src="img/update-section/dot-right.png" alt="dots" class="update__dots-4">
+                    </div>
+                </div>
+            </section>
+    
+            <!--
+    ░██████╗░░░░░░░██████╗███████╗██████╗░██╗░░░██╗██╗░█████╗░███████╗░██████╗
+    ██╔════╝░░░░░░██╔════╝██╔════╝██╔══██╗██║░░░██║██║██╔══██╗██╔════╝██╔════╝
+    ╚█████╗░█████╗╚█████╗░█████╗░░██████╔╝╚██╗░██╔╝██║██║░░╚═╝█████╗░░╚█████╗░
+    ░╚═══██╗╚════╝░╚═══██╗██╔══╝░░██╔══██╗░╚████╔╝░██║██║░░██╗██╔══╝░░░╚═══██╗
+    ██████╔╝░░░░░░██████╔╝███████╗██║░░██║░░╚██╔╝░░██║╚█████╔╝███████╗██████╔╝
+    ╚═════╝░░░░░░░╚═════╝░╚══════╝╚═╝░░╚═╝░░░╚═╝░░░╚═╝░╚════╝░╚══════╝╚═════╝░-->
+    
+    
+            <div class="same-backg">
+                <section class="services">
+                    <div class="container">
+                        <h3 class="heading-3 services__heading-3">SERVICES</h3>
+                        <h2 class="heading-2 services__heading-2">Bring more systems into the network</h2>
+                        <p class="services__text">Find out just how far Siphome can lead your home into next-gen
+                            intelligence.
+                        </p>
+                        <div class="services__illustration">
+                            <img src="img/services-section/home.svg" alt="home" class="services__img"><!--illustration__img-->
+                        </div>
+    
+    
+                        <div class="services__grid-container">
+                            <div class="grid-item"><!--grid-container__item-->
+                                <img src="img/services-section/icon-s1.svg" alt="icon" class="grid-item__icon"><!--item__icon-->
+                                <h4 class="heading-4 heading-number1">Mobile Command Management</h4><!--item__heaqding--1-->
+                            </div>
+    
+                            <div class="grid-item">
+                                <img src="img/services-section/icon-s2.svg" alt="icon" class="grid-item__icon">
+                                <h4 class="heading-4 heading-number2">Equipment Optimizer</h4>
+                            </div>
+    
+                            <div class="grid-item">
+                                <img src="img/services-section/icon-s3.svg" alt="icon" class="grid-item__icon">
+                                <h4 class="heading-4 heading-number3">Lifecycle Prediction</h4>
+                            </div>
+    
+                            <div class="grid-item">
+                                <img src="img/services-section/icon-s4.svg" alt="icon" class="grid-item__icon">
+                                <h4 class="heading-4 heading-number4">Troubleshooting Guide</h4>
+                            </div>
+    
+                            <div class="grid-item">
+                                <img src="img/services-section/icon-s5.svg" alt="icon" class="grid-item__icon">
+                                <h4 class="heading-4 heading-number5">Energy Optimizer</h4>
+                            </div>
+    
+                            <div class="grid-item">
+                                <img src="img/services-section/icon-s6.svg" alt="icon" class="grid-item__icon">
+                                <h4 class="heading-4 heading-number6">Smart Diagnostics</h4>
+                            </div>
+    
+                            <div class="grid-item">
+                                <img src="img/services-section/icon-s7.svg" alt="icon" class="grid-item__icon">
+                                <h4 class="heading-4 heading-number7">Vital Equipment Scan</h4>
+                            </div>
+    
+                            <div class="grid-item">
+                                <img src="img/services-section/icon-s8.svg" alt="icon" class="grid-item__icon">
+                                <h4 class="heading-4 heading-number8">Smart Alerts</h4>
+                            </div>
+    
+                            <div class="grid-item">
+                                <img src="img/services-section/icon-s9.svg" alt="icon" class="grid-item__icon">
+                                <h4 class="heading-4 heading-number9">Preventative
+                                    Maintenance</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    
+                <!--
+                    
+        ░██████╗░░░░░░████████╗███████╗░██████╗████████╗██╗███╗░░░███╗░█████╗░███╗░░██╗██╗░█████╗░██╗░░░░░░██████╗
+        ██╔════╝░░░░░░╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██║████╗░████║██╔══██╗████╗░██║██║██╔══██╗██║░░░░░██╔════╝
+        ╚█████╗░█████╗░░░██║░░░█████╗░░╚█████╗░░░░██║░░░██║██╔████╔██║██║░░██║██╔██╗██║██║███████║██║░░░░░╚█████╗░
+        ░╚═══██╗╚════╝░░░██║░░░██╔══╝░░░╚═══██╗░░░██║░░░██║██║╚██╔╝██║██║░░██║██║╚████║██║██╔══██║██║░░░░░░╚═══██╗
+        ██████╔╝░░░░░░░░░██║░░░███████╗██████╔╝░░░██║░░░██║██║░╚═╝░██║╚█████╔╝██║░╚███║██║██║░░██║███████╗██████╔╝
+        ╚═════╝░░░░░░░░░░╚═╝░░░╚══════╝╚═════╝░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚══╝╚═╝╚═╝░░╚═╝╚══════╝╚═════╝░
+                -->
+    
+                <section class="testimonials">
+                    <div class="container">
+                        <h3 class="heading-3 test__heading-3">TESTIMONIALS</h3><!--testimonials__heading-->
+                        <h2 class="heading-2 test__heading-2">Let’s see what people says about Siphome</h2>
+                        <div class="reviews">
+                            <div class="review-1"><!--reviews--1-->
+                                <p class="reviewa__comment">“We have been waiting on this product and now that we have
+                                    installed a few. We think it will make the industry by storm.”</p><!--reviews--1__comment-->
+                                <h4 class="heading-4 reviews__heading-4">Ryan Oliver</h4><!--reviews--1__heading-4-->
+                                <p class="reviews__job">Design Manager Kiluna</p><!--reviews--1__job-->
+                            </div>
+                            <div class="review-2"><!--reviews--2-->
+                                <p class="reviewa__comment">“Thank you for introducing me to Siphome! We like how the system
+                                    gives updates to us and the homeowner as well to give us a real time update on how
+                                    everything is working.” </p>
+                                <h4 class="reviews__heading-4">Gladina Samantha</h4>
+                                <p class="reviews__job">CEO JobDesk United, LLC</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+    
+            <!--
+                
+    ░██████╗░░░░░░░█████╗░░█████╗░███╗░░██╗████████╗░█████╗░░█████╗░████████╗
+    ██╔════╝░░░░░░██╔══██╗██╔══██╗████╗░██║╚══██╔══╝██╔══██╗██╔══██╗╚══██╔══╝
+    ╚█████╗░█████╗██║░░╚═╝██║░░██║██╔██╗██║░░░██║░░░███████║██║░░╚═╝░░░██║░░░
+    ░╚═══██╗╚════╝██║░░██╗██║░░██║██║╚████║░░░██║░░░██╔══██║██║░░██╗░░░██║░░░
+    ██████╔╝░░░░░░╚█████╔╝╚█████╔╝██║░╚███║░░░██║░░░██║░░██║╚█████╔╝░░░██║░░░
+    ╚═════╝░░░░░░░░╚════╝░░╚════╝░╚═╝░░╚══╝░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░░░░╚═╝░░░
+            -->
+    
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__left-side">
+                        <h3 class="heading-3">CONTACT</h3><!--left-side__heading-3-->
+                        <h2 class="contact__heading-2">Skip logging in,<br><!--left-side__contact__heading-2-->
+                            get what you need
+                            with a few key details</h2>
+                        <div class="contact__illustration"><!--left-side__illustration-->
+                            <img src="img/contact-section/illustration.png" alt="illustration" class="illustration__img">
+                        </div>
+                    </div>
+                    <div class="contact__right-side">
+                        <div class="form"><!--right-side__form-->
+                            <form action="#" method="GET">
+                                <div class="input-box"><!--form__input-box-->
+                                    <label for="name" class="label">Your Name (required)</label><!--input-box__label-->
+                                    <input type="text" id="name" name="name" placeholder="username" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="email" class="label">Email (required)</label>
+                                    <input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+                                </div>
+                                <div class="input-box">
+                                    <label for="subject" class="label">Subject</label>
+                                    <input type="text" name="subject" id="subject" placeholder="Enter subject">
+                                </div>
+                                <div class="input-box">
+                                    <label for="job" class="label">Select Job</label>
+                                    <select name="job" id="job">
+                                        <option value="frontenddev">Frontend dev</option>
+                                        <option value="backenddev">Backend dev</option>
+                                    </select>
+                                </div>
+                                <div class="input-box">
+                                    <label for="company" class="label">Company Name</label>
+                                    <input type="text" name="company" id="company" placeholder="Enter company name">
+                                </div>
+                                <div class="input-box">
+                                    <label for="message" class="label">Message</label>
+                                    <input type="text" name="message" id="message" placeholder="Enter message">
+                                </div>
+                                <div class="input-box"><!--????????????-->
+                                    <button type="submit" class="contact__btn--green">Send now</button><!--?????????????-->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="col col-1"><!--footer__col footer__col-1-->
+                    <img src="img/footer-section/logo.svg" alt="logo" class="footer__logo"><!--col-1__logo-->
+                    <h5 class="footer__heading-5">Siphome, LLC</h5><!--footer__heading-5 col-1__heading-5-->
+                    <p class="col-1__p">
+                        The New Building 2320 Lang Avenue,<br>
+                        Park Valley, Utah,<br>
+                        United States. <br>
+                        84329,<br>
+                        <br>
+                        <br>
+                        P: +1 176 909 2900<br>
+                        E: siphome@gmail.com</p>
+                </div>
+                <div class="col col-2"><!--footer__col footer__col-2-->
+                    <h5 class="footer__heading-5">Navigation</h5><!--footer__heading-5 col-2__heading-5-->
+                    <nav class="footer__nav">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
+                            <li class="footer__item"><a href="#features" class="footer__link">Features</a></li>
+                            <li class="footer__item"><a href="#services" class="footer__link">Services</a></li>
+                            <li class="footer__item"><a href="#testimonials" class="footer__link">Testimonials</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">We Care</a></li>
+                            <li class="footer__item"><a href="#" class="footer__link">Idea Exchange</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col col-3"><!--footer__col footer__col-3-->
+                    <h5 class="footer__heading-5">About</h5><!--footer__heading-5 col-3__heading-5-->
+                    <ul class="footer__list">
+                        <li class="footer__item"><!--list__item--><a href="#" class="footer__link">Contact Us</a><!--item__link--></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy & Policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms & Conditions</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col col-4">
+                    <h5 class="footer__heading-5">Stay Connected</h5>
+                    <ul class="footer__list footer__social">
+                        <li class="footer__item social__item"><a href="#" class="footer__link social__link facebook">Facebook</a></li>
+                        <li class="footer__item social__item"><a href="#" class="footer__link social__link twitter">Twitter</a></li>
+                        <li class="footer__item social__item"><a href="#" class="footer__link social__link instagram">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">
+                Copyright© 2020. Siphome Smart home LLC. 
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
